@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+  <style>
+    .nav-link{
+      font-weight: 600 !important;
+    }
+    .nav-link:hover {
+      background-color: rgb(162, 5, 162)!important;
+      color: #fff !important;
+    }
+
+    #cart {
+      background-color: white !important;
+    }
+    #cart{
+      color: rgb(162,5,162) !important;
+      font-weight: 900!important;
+    }
+
+    .laptop {
+      position: relative;
+      animation: down 2s ease-out 0.5s 1 forwards;
+    }
+
+    @keyframes down {
+      from {
+        bottom: 100px;
+        opacity: 0.5;
+      }
+
+      to {
+        bottom: 0px;
+        opacity: 1;
+      }
+    }
+
+    #btn15:hover {
+      color: #fff;
+      background-color: rgb(162, 5, 162);
+
+    }
+    #btn15 {
+      border: 2px solid rgb(162, 5, 162) !important;
+      
+    
+      background-color: #fff;
+      color: rgb(162, 5, 162);
+    }
+.brand{
+  border-radius: 8px;
+  margin-right:0.5rem;
+}
+
+    #btn16 {
+      color: #fff;
+      background-color: rgb(162, 5, 162);
+    }
+    #btn16:hover{
+      border:2px solid rgb(162, 5, 162);
+      color:rgb(162, 5, 162);
+      background-color:#fff;
+    }
+    .laptop{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+    .nav-link{
+      text-align: center;
+
+    }
+    .navbar-toggler{
+      width:40px;
+      height:40px;
+      padding:0px;
+    }
+    .navbar-nav{
+      width:50%;
+      margin:0 auto;
+      
+    }
+   
+  </style>
+</head>
+
+<body>
+  <div class="container-lg  p-1">
+   
+    <div class="section-1 m-2 p-3 ">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <span class="navbar-brand  brand_text fw-bold fs-3"><img id="logo" class="brand"
+            src="https://i.pinimg.com/originals/e4/d3/95/e4d395849317f98f2a418c0e10182b0d.gif"
+            height="40px" />Lenovo legion 5</span>
+        <!-- toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+          aria-controls="main-nav" aria-expanded="false" aria-label="toggler navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center align-center" id="main-nav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark fs-5 fw-normal rounded-3 px-3 px-lg-4 mx-2">Specs</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark fs-5 fw-normal rounded-3 px-3 px-lg-4 mx-2">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-dark fs-5 fw-normal rounded-3 px-3 px-lg-4 mx-2 ">Contact</a>
+            </li>
+            <li class="nav-item  d-none d-md-inline-block">
+              <a href="#" id="cart" class="nav-link  text-dark  fw-normal fs-4 ms-5 mx-2 ">
+                <i class="bi bi-cart3"></i></a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+
+    <div class="section-2 m-2 p-3 row d-flex flex-row flex-wrap-reverse justify-content-between align-items-center">
+      <div class="col-lg-5 m-2 p-2   ">
+        <h1 class="fs-1 fw-bold my-3">Laptop for the future</h1>
+        <p class="fs-5 text-secondary fw-normal my-3"> Lenovo Legion 5 Ryzen 5 Hexa Core 4600H - (8 GB/256 GB SSD +1TB
+          HDD/Windows 10 Home/4 GB Graphics/NVIDIA GeForce GTX 1650) 15ACH6 Gaming Laptop (15.6 inch, Phantom Blue,
+          Shadow Black, 2.4 kg)</p>
+        <button id="btn15" class="btn btn15 btn-md my-3 me-2 px-4 py-2 rounded-2  fs-6 fw-bold ">15.6 inch</button>
+        <button  id="btn16" class="btn btn-md my-3 px-3 ms-2 py-2  rounded-2 fs-6 fw-bold ">Add to cart</button>
+      </div>
+
+      <div class="col-lg-6 m-2 p-2 laptop">
+        <img class="laptop"
+          src="https://rukminim1.flixcart.com/image/832/832/ksj9dow0/computer/n/i/p/na-gaming-laptop-lenovo-original-imag6345sb2jfu2a.jpeg?q=70"
+          width="90%" height="90%" />
+        <div class="icons d-flex flex-row justify-content-center align-items-center ">
+          <i class="bi mx-2 bi-chevron-compact-left"></i>
+          <i class="bi mx-2 bi-circle"></i>
+          <i class="bi mx-2 bi-circle-fill"></i>
+          <i class="bi mx-2 bi-circle-fill"></i>
+          <i class="bi mx-2 bi-chevron-compact-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
